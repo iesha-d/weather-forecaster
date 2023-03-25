@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather</title>
+        <link rel="stylesheet" href="weather.css">
+        
+    </head>
+    <body>
+        <div class="content">
+            <div class="center"><h1>Forecast Generator</h1></div>
+            <div class="input center">
+                <div>
+                    <span class="label">Latitude:</span> <input type="text" id="lat" value="26.2">
+                </div>
+                <div>
+                    <span class="label">Longitude:</span> <input type="text" id="long" value="-98.2">
+                </div>
+                <button onclick="getPicture();">Do it!</button>
+            </div>
+
+            <div id="output">Enter a lat, long above to get a forecast!</div>
+
+            <canvas width=455 height=225 id="temperatures"></canvas>
+        </div>
+        <script src="weather.js"></script>
+    </body>
+</html>
